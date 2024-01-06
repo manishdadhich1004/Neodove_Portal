@@ -1,12 +1,7 @@
 from time import sleep
-
-import pytest
 from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
-
 from pageObjects.homePage import HomePage
-from testData.loginDetail import LoginData
-
 
 class LoginPage:
     def __init__(self, driver):

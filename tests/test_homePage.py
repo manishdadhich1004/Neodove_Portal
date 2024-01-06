@@ -1,17 +1,7 @@
 from telnetlib import EC
 from time import sleep
-
-import pytest
-from select import select
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.select import Select
-from selenium.webdriver.support.wait import WebDriverWait
-
-from pageObjects.homePage import HomePage
 from pageObjects.loginPage import LoginPage
-from testData.loginDetail import LoginData
 from utilities.baseClass import BaseClass
-
 
 class TestHomePage(BaseClass):
 
