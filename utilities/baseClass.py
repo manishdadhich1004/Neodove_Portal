@@ -7,6 +7,9 @@ from utilities.config.appConfig import AppConfig
 @pytest.mark.usefixtures("setup")
 class BaseClass:
 
+    def reloadPage(self):
+        self.driver.refresh()
+
     def giveExplicitWait(self, locator, duration):
         wait = WebDriverWait(self.driver, duration)
         wait.until(expected_conditions.presence_of_element_located(locator))

@@ -1,4 +1,4 @@
-from asyncio import sleep
+import time
 from pageObjects.loginPage import LoginPage
 from testData.loginDetail import LoginData
 from utilities.baseClass import BaseClass
@@ -8,7 +8,7 @@ class TestLogin(BaseClass):
 
     def test_validate_login_page(self):
         loginpage = LoginPage(self.driver)
-        sleep(3)
+        self.reloadPage()
         loginpage.validateLoginPage()
 
 
