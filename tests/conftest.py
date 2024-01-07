@@ -23,11 +23,6 @@ def setup(request):
         options.binary_location = r'C:\Program Files\Mozilla Firefox\firefox.exe'
         service_obj = Service('./geckodriver-v0.32.2-win32/geckodriver.exe')
         driver = webdriver.Firefox(service=service_obj, options=options)
-
-
-    #options = webdriver.ChromeOptions()
-    #options.add_experimental_option("detach", True)
-    #driver = webdriver.Chrome(options=options, service=service_obj)
     
     driver.implicitly_wait(4)
     driver.maximize_window()
