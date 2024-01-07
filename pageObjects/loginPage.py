@@ -28,13 +28,13 @@ class LoginPage:
         return self.driver.find_element(*LoginPage.checkBox)
     
     def visibilityOnButton(self):
-        self.driver.find_element(*self.visibilityOn)
+        return self.driver.find_element(*self.visibilityOn)
 
     def visibilityOffButton(self):
-            self.driver.find_element(*self.visibilityOff)
+        return self.driver.find_element(*self.visibilityOff)
 
     def submitButton(self):
-        self.driver.find_element(*LoginPage.submit)
+        return self.driver.find_element(*LoginPage.submit)
 
     def comfirmButton(self):
         return self.driver.find_element(*LoginPage.alreadyLogin)
